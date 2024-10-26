@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CaliforniAd from "../../assets/videos/californiaadd.mp4";
-import TruckBackground from "../../assets/images/Kamioni.jpg";
+// import TruckBackground from "../../assets/images/Kamioni.jpg";
+import TruckBackground from "../../assets/images/LandingPageKamionaUsa.jpg";
 
 import { useInView } from "react-intersection-observer";
 import { useTranslation } from "react-i18next";
