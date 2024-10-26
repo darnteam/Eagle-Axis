@@ -1,0 +1,135 @@
+{
+  "NavBar": {
+    "Home": "Home",
+    "AboutUs": "Trainers",
+    "Gallery": "Our Gallery",
+    "Contact": "Contact"
+  },
+  "ImageCarousel": {
+    "title": "WELCOME TO EAGLE AXIS",
+    "quote": "Find Your Power, Feel The Difference."
+  },
+  "CardsSection": {
+    "title": "ABOUT OUR HOME",
+    "area": "OF AREA",
+    "pts": "PERSONAL TRAINERS",
+    "categories": "CATEGORIES OF TRAINING"
+  },
+  "DivNImage": {
+    "title": "INVITING & INSPIRING",
+    "text": "Our community is built on encouragement and positivity. We celebrate each other's achievements, big and small, and we inspire one another to push beyond our limits. Join us and discover the power of a supportive fitness community that’s here to help you reach your full potential.",
+    "buttonText": "Learn More"
+  },
+  "ImageNDiv": {
+    "title": "CARING & CORDIAL",
+    "text": "At our fitness center, we pride ourselves on fostering a warm and welcoming environment where everyone feels like part of the family. Our team is dedicated to ensuring that you not only achieve your fitness goals but also enjoy every step of the journey.",
+    "buttonText": "View Events"
+  },
+  "GroupSection": {
+    "title": "Personal Training",
+    "description": "Get fit on your terms. All fitness levels and abilities are welcome, from first-timers to seasoned athletes.",
+    "Card1": {
+      "title": "Unlimited",
+      "description": "Challenge yourself and achieve your dreams."
+    },
+    "Card2": {
+      "title": "All-inclusive",
+      "description": "Training programs, meal-plan and professional advice."
+    },
+    "Card3": {
+      "title": "Expert Instruction",
+      "description": "The best instructors from the region"
+    },
+    "Card4": {
+      "title": "Convenience",
+      "description": "Everything you need, anytime you want"
+    }
+  },
+  "IgShowcase": {
+    "text": "See more, follow us on Instagram",
+    "buttonText": "Follow Us"
+  },
+  "Memberships": {
+    "title": "MEMBERSHIP OPTIONS",
+    "description": "All Memberships include full access to our amenities, fitness classes & much more. \n Choose the membership that fits your needs.",
+    "woman": " Woman",
+    "man": "Man",
+    "monthly": "Monthly pacakge",
+    "3months": "3 Months Package",
+    "12months": "12 Months Package",
+    "bodyAnalysis": "Body Analysis",
+    "buttonText": "Join Us"
+  },
+  "AmenitiesSection": {
+    "title": "Explore Our Diverse Training Options",
+    "description": "Explore our array of training types and find the perfect fit for your fitness journey."
+  },
+  "LocationSection": {
+    "title": "WHERE TO FIND US",
+    "description": "Locate our gym through Google Maps and our video."
+  },
+  "Footer": {
+    "paragraph": "At our Fitness Center, our commitment to unparalleled customer service and support is unwavering. We strive to foster an inclusive and nurturing environment where our valued Members, dedicated Team Members, and cherished Guests feel empowered to pursue their wellness journey with confidence. Your well-being is our priority, and we're here to guide and inspire you every step of the way.",
+    "HoursOfOperation": "Hours of operation",
+    "Monday-Thursday": "Monday-Saturday",
+    "Friday": "Friday",
+    "Saturday&Sunday": "Saturday & Sunday",
+    "UsefulPDFs": "Useful PDFS",
+    "PrivacyPolicy&TermsOfUse": "Privacy Policy & Terms of Use",
+    "MembershipAgreement": "Membership Agreement",
+    "MembershipRules": "Membership Rules & Regulations",
+    "ContactUs": "CONTACT US"
+  },
+
+  "HistorySection": {
+    "banner": {
+      "title": "Meet Our Team",
+      "text": "Discover the Faces Behind Our Commitment to Your Wellness"
+    },
+    "title": "Our Trainers",
+    "trainers": {
+      "ismailShefketi": {
+        "title": "Ismail Shefketi",
+        "date": "Professional Trainer",
+        "paragraph": "Motivated and personable fitness professional with 10 year of experience that aims to provide high quality exercise services that encourage individuals to maintain a healthy body and mind."
+      },
+      "eleonoraKiprijanovska": {
+        "title": "Eleonora Kiprijanovska",
+        "date": "Professional Trainer",
+        "paragraph": "Dedicated instructor with a passionate resolve to help various clients achieve their fitness goals in a supportive environment. Offering 5+ years’ professional experience in developing and leading group and individualized fitness classes targeted at all age groups and fitness goals."
+      },
+      "endritAziri": {
+        "title": "Endrit Aziri",
+        "date": "Professional Trainer",
+        "paragraph": "Specializes in muscle gain and fat loss, offering personalized weightlifting routines to help clients achieve their fitness goals efficiently."
+      },
+      "teaJovancevska": {
+          "title": "Tea Jovancevska",
+          "date": "Professional Trainer",
+          
+          "paragraph": "Focuses on strength training and body transformation, helping clients gain lean muscle mass while shedding excess fat."
+      }
+    }
+  },
+  "Gallery": {
+    "title": "OUR GALLERY",
+    "text": "Have a closer look at what we have to offer!"
+  },
+  "ContactUs": {
+    "title": "CONTACT US",
+    "text": "Have questions or want to get in touch? Reach out to us today! We're here to assist you with any inquiries and help you on your fitness journey.",
+    "key": "CONTACT",
+    "Location": {
+      "location": "Location",
+      "address": "Kumanove, North Macedonia"
+    },
+    "Contact": {
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "socialMedia": "For more information and updates, follow us on Facebook and Instagram."
+  },
+  "Location": {
+    "key": "LOCATION"
+  }
+}

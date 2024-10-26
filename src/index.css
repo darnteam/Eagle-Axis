@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("./assets/fonts/Comfortaa/Comfortaa-SemiBold.ttf") format("truetype"),
+    url("./assets/fonts/Comfortaa/Comfortaa-SemiBold.ttf") format("truetype");
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.scroll-snap-type {
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-snap-align {
+  scroll-snap-align: start;
+}
