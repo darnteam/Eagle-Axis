@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../../assets/images/EagleAxisLogoCut.png";
+import Logo from "../../assets/images/EagleAxisLogo3DNoBg.png";
 import Burger from "../../assets/images/navBurgerMenu.png";
 import CloseMenu from "../../assets/images/closeMobileMenu.png";
 
 const NavBar = () => {
   const paths = [
     { pathway: "ABOUT US", link: "/about" },
-    { pathway: "APPLY NOW", link: "/contact" },
-    { pathway: "EQUIPMENT", link: "/gallery" },
+    { pathway: "APPLY NOW", link: "#apply-now" },
+    { pathway: "EQUIPMENT", link: "/equipment" },
   ];
 
   const [mobileMenu, setMobileMenu] = useState(false);
