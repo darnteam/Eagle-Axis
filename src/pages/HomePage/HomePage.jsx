@@ -9,6 +9,7 @@ import Image1 from "../../assets/images/purchase-banner.jpeg";
 import BoylWorkingOut from "../../assets/images/california-2.jpeg";
 import Memberships from "../../components/membership-plans/memberships";
 import AminitiesSection from "../../components/Amenities/AminitiesSection";
+import InputFields from "../../components/inputFields/inputFields";
 import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
@@ -23,6 +24,8 @@ const HomePage = () => {
       <div className="w-full h-4 bg-primaryYellow"></div>
       <Memberships />
       <IgShowcase />
+
+      <InputFields />
     </div>
   );
 };
