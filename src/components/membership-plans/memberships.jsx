@@ -109,7 +109,7 @@ const Memberships = () => {
 
         <div
           style={{ fontFamily: "Comfortaa" }}
-          className={`mt-20 md:mt-40 flex flex-col justify-center items-center w-full h-fit`}
+          className={` flex flex-col justify-center items-center w-full h-fit`}
         >
           <h1
             className={`text-2xl md:text-4xl text-center uppercase transition-all duration-[1800ms]`}
