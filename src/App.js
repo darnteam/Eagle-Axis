@@ -5,6 +5,7 @@ import AboutPage from "./pages/AboutPage/AboutPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Footer from "./components/Footer/Footer";
+import EquipmentPage from "./pages/EquipmentPage/EquipmentPage";
 
 const App = () => {
   document.title = "Eagle Axis"; // shtohet logjika më vonë
@@ -18,6 +19,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/equipment" element={<EquipmentPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />

@@ -1,18 +1,9 @@
 import React, { useState, useEffect, Fragment } from "react";
-import Card from "../cards-section/card";
-import Handshake from "../../assets/icons/handshake.png";
-import Bicycle from "../../assets/icons/bicycle.png";
-import Gymnastics from "../../assets/icons/gymnastic-rings.png";
-import BgBanner from "../../assets/images/california-2.jpeg";
-import BgBanner1 from "../../assets/images/california-3.jpeg";
-import BgBanner2 from "../../assets/images/california-4.jpeg";
-import BgBanner3 from "../../assets/images/california-5.jpeg";
-import NumberFlipper from "../NumberFlipper/numberFlipper";
+
 import Years25Icon from "../../assets/icons/25-years.png";
 import GuaranteeIcon from "../../assets/icons/protection-guarantee.png";
 import Support247Icon from "../../assets/icons/24-hours-support.png";
 import { useInView } from "react-intersection-observer";
-import { Link } from "react-router-dom";
 import { ApplicationModal } from "../ApplicationModal/ApplicationModal";
 
 const CardSection = () => {
