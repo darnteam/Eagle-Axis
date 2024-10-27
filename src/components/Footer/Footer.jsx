@@ -6,11 +6,11 @@ import Mail from "../../assets/icons/mail.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
-import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
-import { useTranslation } from "react-i18next";
+
+
 
 const Footer = () => {
-  const [t, i18next] = useTranslation("global");
+
 
   return (
     <div className="flex h-auto justify-center items-center flex-col">

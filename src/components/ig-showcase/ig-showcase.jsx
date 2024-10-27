@@ -1,9 +1,8 @@
 import React from "react";
 
-import { useTranslation } from "react-i18next";
 
 const IgShowcase = () => {
-  const [t] = useTranslation("global");
+
   return (
     <div className="flex flex-col justify-center items-center mt-12 mb-12 lg:mt-20 lg:mb-20">
       <div className="w-full h-72 md:h-96  relative flex justify-center items-center bg-black bg-opacity-80">

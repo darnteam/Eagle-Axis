@@ -3,7 +3,7 @@ import CaliforniAd from "../../assets/videos/californiaadd.mp4";
 import TruckBackground from "../../assets/images/LandingPageKamionaUsa.jpg";
 
 import { useInView } from "react-intersection-observer";
-import { useTranslation } from "react-i18next";
+
 import { Link } from "react-router-dom";
 
 const ImageCarousel = () => {
@@ -26,7 +26,7 @@ const ImageCarousel = () => {
     setIsVisible(inView);
   }, [inView]);
 
-  const [t] = useTranslation("global");
+
 
   return (
     <div ref={ref} className="relative w-full h-screen overflow-hidden">
