@@ -117,7 +117,7 @@ const EquipmentPage = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-4 bg-primaryYellow mt-16 md:mt-24 lg:mt-36"></div>
+      <div className="w-full h-4 bg-primaryYellow mt-12 lg:mt-0"></div>
     </div>
   );
 };
