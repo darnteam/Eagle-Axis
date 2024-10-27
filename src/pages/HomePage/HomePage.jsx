@@ -1,37 +1,26 @@
 // HomePage.js
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
 import CardSection from "../../components/cards-section/card-section";
 import IgShowcase from "../../components/ig-showcase/ig-showcase";
 import Memberships from "../../components/membership-plans/memberships";
+import { scrollToSection } from "../../utils/scrollUtils";
+import { useLocation } from 'react-router-dom';
 
 const HomePage = () => {
-  const cardSectionRef = useRef(null); // Create a ref for CardSection
+  const cardSectionRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollToCards) {
+      scrollToSection(cardSectionRef);
+      // Clear the state
+      window.history.replaceState({}, document.title);
+    }
+  }, [location]);
 
   const scrollToCardSection = () => {
-    if (cardSectionRef.current) {
-      // Determine offset based on screen width
-      let offset = 0;
-      if (window.innerWidth >= 1024) {
-        // Large screens (lg and up)
-        offset = 300;
-      } else if (window.innerWidth >= 768) {
-        // Medium screens (md)
-        offset = 290;
-      } else {
-        // Small screens (sm and below)
-        offset = 100;
-      }
-
-      // Calculate the target position with the determined offset
-      const topPosition = cardSectionRef.current.getBoundingClientRect().top + window.scrollY - offset;
-
-      // Smooth scroll to the target position
-      window.scrollTo({
-        top: topPosition,
-        behavior: "smooth",
-      });
-    }
+    scrollToSection(cardSectionRef);
   };
 
   return (

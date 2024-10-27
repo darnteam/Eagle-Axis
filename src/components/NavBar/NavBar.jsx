@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Logo from "../../assets/images/EagleAxisLogo3DNoBg.png";
 import Burger from "../../assets/images/navBurgerMenu.png";
 import CloseMenu from "../../assets/images/closeMobileMenu.png";
 
 const NavBar = () => {
+  const navigate = useNavigate();
   const paths = [
     { pathway: "ABOUT US", link: "/about" },
-    { pathway: "APPLY NOW", link: "/apply-now" },
+    { pathway: "APPLY NOW", link: "/", state: { scrollToCards: true } },
     { pathway: "EQUIPMENT", link: "/equipment" },
   ];
 
@@ -48,19 +49,28 @@ const NavBar = () => {
             className="transition-all duration-300 ease-in-out text-white px-3 py-1 text-lg group relative"
             key={e.pathway}
           >
-            <NavLink
-              to={e.link}
-              className={({ isActive }) =>
-                `${
-                  isActive && scrolled
-                    ? "border-primaryYellow"
-                    : "border-transparent"
-                } border-b-2 transition-all duration-300 ease-in-out pb-1 group-hover:border-primaryYellow`
-              }
-              onClick={() => setMobileMenu(false)}
-            >
-              {e.pathway}
-            </NavLink>
+            {e.state ? (
+              <button
+                onClick={() => navigate(e.link, { state: e.state })}
+                className={`border-b-2 border-transparent transition-all duration-300 ease-in-out pb-1 group-hover:border-primaryYellow`}
+              >
+                {e.pathway}
+              </button>
+            ) : (
+              <NavLink
+                to={e.link}
+                className={({ isActive }) =>
+                  `${
+                    isActive && scrolled
+                      ? "border-primaryYellow"
+                      : "border-transparent"
+                  } border-b-2 transition-all duration-300 ease-in-out pb-1 group-hover:border-primaryYellow`
+                }
+                onClick={() => setMobileMenu(false)}
+              >
+                {e.pathway}
+              </NavLink>
+            )}
           </li>
         ))}
       </ul>
@@ -109,14 +119,27 @@ const NavBar = () => {
             />
           </NavLink>
           {paths.map((e) => (
-            <NavLink
-              key={e.pathway}
-              to={e.link}
-              className="text-white text-2xl py-2 hover:text-primaryYellow"
-              onClick={() => setMobileMenu(false)}
-            >
-              {e.pathway}
-            </NavLink>
+            e.state ? (
+              <button
+                key={e.pathway}
+                onClick={() => {
+                  navigate(e.link, { state: e.state });
+                  setMobileMenu(false);
+                }}
+                className="text-white text-2xl py-2 hover:text-primaryYellow"
+              >
+                {e.pathway}
+              </button>
+            ) : (
+              <NavLink
+                key={e.pathway}
+                to={e.link}
+                className="text-white text-2xl py-2 hover:text-primaryYellow"
+                onClick={() => setMobileMenu(false)}
+              >
+                {e.pathway}
+              </NavLink>
+            )
           ))}
           <a
             href="tel:+123457128378"

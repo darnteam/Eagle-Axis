@@ -2,15 +2,15 @@ import React, { useState, useEffect } from "react";
 import PricingBanner from "../../assets/images/KamioniDheMalet.jpg";
 import SimplePricingCard from "./simplepricingcard";
 import { useInView } from "react-intersection-observer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Memberships = () => {
-
   const [activeTab, setActiveTab] = useState("owner-operator");
   const [isVisible, setIsVisible] = useState(false);
   const { ref, inView } = useInView({
     threshold: 0.5, // Trigger when 50% of the component is visible
   });
+  const navigate = useNavigate();
 
   useEffect(() => {
     setIsVisible(inView);
@@ -124,13 +124,13 @@ const Memberships = () => {
           <div
             className={`transition-all duration-[2500ms]`}
           >
-            <Link
+            <button
               style={{ fontFamily: "Comfortaa" }}
-              to={"/apply-now"}
+              onClick={() => navigate('/', { state: { scrollToCards: true } })}
               className="inline-block mt-8 mb-10 px-8 md:px-12 py-2 md:py-3 text-white rounded-xl uppercase bg-primaryYellow text-lg md:text-xl font-semibold transform transition-all duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:border-primaryYellow hover:text-primaryYellow border border-transparent"
             >
               Apply Now
-            </Link>
+            </button>
           </div>
         </div>
       </div>

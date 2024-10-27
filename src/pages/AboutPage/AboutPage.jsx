@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import { useNavigate } from 'react-router-dom';
 
 import IgShowcase from "../../components/ig-showcase/ig-showcase";
 import KamioniMalet from "../../assets/images/KamioniDheMalet.jpg";
@@ -10,10 +11,15 @@ const AboutPage = () => {
   const { ref, inView } = useInView({
     threshold: 0.2,
   });
+  const navigate = useNavigate();
 
   useEffect(() => {
     setIsVisible(inView);
   }, [inView]);
+
+  const handleApplyClick = () => {
+    navigate('/', { state: { scrollToCards: true } });
+  };
 
   return (
     <div>
@@ -77,13 +83,13 @@ const AboutPage = () => {
                 compensation. Join our team and become part of a movement to
                 transform the trucking industry.
               </p>
-              <Link
-                to={"/apply-now"}
+              <button
+                onClick={handleApplyClick}
                 style={{ fontFamily: "Comfortaa" }}
                 className="btn inline-block w-fit uppercase mt-8 mb-6 md:mt-10 px-8 md:px-10 lg:px-12 py-2 md:py-3 text-white rounded-xl bg-primaryYellow text-lg md:text-xl font-semibold transform transition-all border-[1px] border-transparent duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:border-primaryYellow hover:text-primaryYellow"
               >
                 Apply for a job
-              </Link>
+              </button>
             </div>
           </div>
         </div>
