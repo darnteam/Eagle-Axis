@@ -117,7 +117,7 @@ const Memberships = () => {
             Does that sound like a plan?
           </h1>
           <span
-            className={`mt-6 md:mt-10 text-lg md:text-xl transition-all duration-[2000ms]`}
+            className={`mt-6 md:mt-10 text-center text-lg md:text-xl transition-all duration-[2000ms]`}
           >
             If yes, click APPLY NOW and join Eagle Axis!
           </span>
