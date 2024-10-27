@@ -1,5 +1,5 @@
 import React from "react";
-import FooterBanner from "../../assets/images/truck_image_second.jpeg";
+import FooterBanner from "../../assets/images/LandingPageKamionaUsa.jpg";
 import Location from "../../assets/icons/location.png";
 import Phone from "../../assets/icons/phone.png";
 import Mail from "../../assets/icons/mail.png";
