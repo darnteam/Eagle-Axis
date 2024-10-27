@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
-import IgShowcase from "../../components/ig-showcase/ig-showcase";
-import { ApplicationModal } from "../../components/ApplicationModal/ApplicationModal";
-import KamioniMalet from "../../assets/images/KamioniDheMalet.jpg";
-import { Link } from "react-router-dom";
 
 const EquipmentPage = () => {
   const [isVisible, setIsVisible] = useState(false);

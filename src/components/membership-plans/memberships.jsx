@@ -2,11 +2,10 @@ import React, { useState, useEffect } from "react";
 import PricingBanner from "../../assets/images/KamioniDheMalet.jpg";
 import SimplePricingCard from "./simplepricingcard";
 import { useInView } from "react-intersection-observer";
-import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const Memberships = () => {
-  const [t] = useTranslation("global");
+
   const [activeTab, setActiveTab] = useState("owner-operator");
   const [isVisible, setIsVisible] = useState(false);
   const { ref, inView } = useInView({
