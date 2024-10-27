@@ -1,5 +1,10 @@
 import React from "react";
+import { ApplicationModal } from "../../components/ApplicationModal/ApplicationModal";
 
-export const ApplicationPage = () => {
-  return <div></div>;
+ const ApplicationPage = () => {
+  return <div>
+    <ApplicationModal/>
+  </div>;
 };
+
+export default ApplicationPage

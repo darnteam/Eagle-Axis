@@ -7,7 +7,7 @@ import CloseMenu from "../../assets/images/closeMobileMenu.png";
 const NavBar = () => {
   const paths = [
     { pathway: "ABOUT US", link: "/about" },
-    { pathway: "APPLY NOW", link: "#apply-now" },
+    { pathway: "APPLY NOW", link: "/apply-now" },
     { pathway: "EQUIPMENT", link: "/equipment" },
   ];
 
