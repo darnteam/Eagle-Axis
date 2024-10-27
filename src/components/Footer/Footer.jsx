@@ -33,13 +33,13 @@ const Footer = () => {
             </h1>
 
             <div className="flex justify-between w-[80%] mx-auto lg:mx-0 lg:w-[30%] mt-20">
-              <a href="https://www.instagram.com/californiafitnescenter/">
+              <a href="https://www.instagram.com/">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   className="text-white text-xl  border-white rounded-full border-2 p-2 transition-all duration-300  ease-in-out hover:bg-white hover:text-black hover:border-white hover:scale-105 hover:cursor-pointer shadow-lg shadow-zinc-500"
                 />
               </a>
-              <a href="https://www.facebook.com/californiafitnesscenter1/">
+              <a href="https://www.facebook.com/">
                 <FontAwesomeIcon
                   icon={faFacebookF}
                   className="text-white text-xl border-white rounded-full border-2 p-2 px-3 transition-all duration-300  ease-in-out hover:bg-white hover:border-white hover:text-black hover:scale-105 shadow-lg shadow-zinc-500"
@@ -93,7 +93,7 @@ const Footer = () => {
               style={{ fontFamily: "Comfortaa" }}
               className="text-l text-center lg:text-start text-white font-bold mb-4"
             >
-              {t("Footer.ContactUs")}
+              CONTACT US 
             </p>
             <div className="flex lg:w-[85%] w-full items-center justify-center lg:justify-start ">
               <img src={Location} alt="" className="w-6 h-6" />
