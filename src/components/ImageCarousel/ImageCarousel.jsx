@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import CaliforniAd from "../../assets/videos/californiaadd.mp4";
 import TruckBackground from "../../assets/images/LandingPageKamionaUsa.jpg";
 
 import { useInView } from "react-intersection-observer";
@@ -12,7 +11,7 @@ const ImageCarousel = () => {
   const [ref, inView] = useInView({
     threshold: 0.7,
   });
-  const slides = [CaliforniAd];
+  const slides = [TruckBackground];
 
   useEffect(() => {
     const interval = setInterval(() => {
