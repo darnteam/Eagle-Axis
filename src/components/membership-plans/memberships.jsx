@@ -126,7 +126,7 @@ const Memberships = () => {
           >
             <Link
               style={{ fontFamily: "Comfortaa" }}
-              to={"#apply-now"}
+              to={"/apply-now"}
               className="inline-block mt-8 mb-10 px-8 md:px-12 py-2 md:py-3 text-white rounded-xl uppercase bg-primaryYellow text-lg md:text-xl font-semibold transform transition-all duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:border-primaryYellow hover:text-primaryYellow border border-transparent"
             >
               Apply Now
