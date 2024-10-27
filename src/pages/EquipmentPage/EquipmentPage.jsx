@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-
-import IgShowcase from "../../components/ig-showcase/ig-showcase";
-import { ApplicationModal } from "../../components/ApplicationModal/ApplicationModal";
-import KamioniMalet from "../../assets/images/KamioniDheMalet.jpg";
-import { Link } from "react-router-dom";
+import TruckImage from "../../assets/images/truck_image_second.jpeg";
 
 const EquipmentPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -53,48 +49,30 @@ const EquipmentPage = () => {
             </p>
           </div>
 
-          <div
-            ref={ref}
-            className="flex flex-col  h-auto max-w-full mx-auto px-4"
-          >
+          <div ref={ref} className="flex flex-col h-auto max-w-full mx-auto px-4">
             <div
-              className={`duration-[1500ms] flex flex-col items-center justify-center ${
+              className={`duration-[1500ms] flex flex-col items-center ${
                 isVisible ? "opacity-100 translate-x-0" : "opacity-0 lg:-translate-x-10"
               }`}
             >
               <p
                 style={{ fontFamily: "Comfortaa" }}
-                className=" w-full md:w-3/4 lg:w-1/2 text-center text-sm md:text-lg lg:text-xl text-white mx-auto"
+                className="w-full md:w-3/4 lg:w-1/2 text-center text-sm md:text-lg lg:text-xl text-white mx-auto"
               >
                 Our fleet is small but well-maintained, equipped with all the essentials to support our drivers in their daily tasks.
               </p>
             </div>
 
-            <div className="w-full md:w-4/5 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
-              <div className="carousel rounded-box w-full max-w-xs mx-auto">
-                {/* Carousel start */}
-                <div className="carousel-item w-full">
+            <div className="w-container mx-auto mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10 items-center">
+              <div className="flex justify-center lg:justify-start">
+                {/* Image Container */}
+                <div className="rounded-lg shadow-lg overflow-hidden max-w-xs sm:max-w-sm lg:max-w-md">
                   <img
-                    src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
-                    className="w-full"
+                    src={TruckImage}
                     alt="Truck"
+                    className="w-full h-auto object-cover"
                   />
                 </div>
-                <div className="carousel-item w-full">
-                  <img
-                    src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
-                    className="w-full"
-                    alt="Truck"
-                  />
-                </div>
-                <div className="carousel-item w-full">
-                  <img
-                    src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
-                    className="w-full"
-                    alt="Truck"
-                  />
-                </div>
-                {/* Additional carousel items */}
               </div>
 
               <div
