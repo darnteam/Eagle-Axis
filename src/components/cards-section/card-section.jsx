@@ -18,6 +18,7 @@ const CardSection = () => {
 
   return (
     <div
+      id="apply-now" 
       className="container mx-auto h-auto relative bg-opacity-0 box-border mb-16"
       style={{
         backgroundColor: "rgba(0, 0, 0, 1)",

@@ -1,14 +1,12 @@
+// ImageCarousel.js
 import React, { useState, useEffect } from "react";
 import TruckBackground from "../../assets/images/LandingPageKamionaUsa.jpg";
-
 import { useInView } from "react-intersection-observer";
 
-import { Link } from "react-router-dom";
-
-const ImageCarousel = () => {
+const ImageCarousel = ({ scrollToCardSection }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
-  const [ref, inView] = useInView({
+  const { ref, inView } = useInView({
     threshold: 0.7,
   });
   const slides = [TruckBackground];
@@ -17,15 +15,12 @@ const ImageCarousel = () => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
     });
-
     return () => clearInterval(interval);
   }, [slides.length]);
 
   useEffect(() => {
     setIsVisible(inView);
   }, [inView]);
-
-
 
   return (
     <div ref={ref} className="relative w-full h-screen overflow-hidden">
@@ -85,14 +80,13 @@ const ImageCarousel = () => {
                 >
                   Are you a truck driver looking for work?
                 </p>
-                <Link
+                <button
+                  onClick={scrollToCardSection} // Use the scroll function here
                   style={{ fontFamily: "Comfortaa" }}
-                  to={"#apply-now"}
-                  scrollbehavior="smooth"
                   className="inline-block mt-4 px-6 sm:px-8 md:px-10 lg:px-12 py-2 sm:py-2 md:py-3 rounded-xl bg-primaryYellow text-lg sm:text-xl md:text-2xl font-semibold transform transition-all border border-transparent duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:border-primaryYellow hover:text-primaryYellow"
                 >
                   Apply Now
-                </Link>
+                </button>
               </div>
             </div>
           </div>
