@@ -2,8 +2,7 @@ import NavBar from "./components/NavBar/NavBar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutPage from "./pages/AboutPage/AboutPage";
-
-import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Footer from "./components/Footer/Footer";
 import EquipmentPage from "./pages/EquipmentPage/EquipmentPage";
 import ApplicationPage from "./pages/ApplicationPage/ApplicationPage"
@@ -14,6 +13,7 @@ const App = () => {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <div className="absolute top-0 left-0 w-full z-50">
           <NavBar />
         </div>
@@ -22,7 +22,6 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/apply-now" element={<ApplicationPage />} />
           <Route path="/equipment" element={<EquipmentPage />} />
-
         </Routes>
         <Footer />
       </Router>
