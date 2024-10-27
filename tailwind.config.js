@@ -11,8 +11,12 @@ module.exports = {
         primaryYellow: "#C39351",
         secondaryYellow: "#CE8620",
         richBlack: "#00171F",
-        },
+      },
     },
   },
-  plugins: [require("tailwindcss"), require("autoprefixer")],
+  plugins: [
+    require("tailwindcss"),
+    require("autoprefixer"),
+    require("daisyui"),
+  ],
 };

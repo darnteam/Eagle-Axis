@@ -11,9 +11,9 @@ import NumberFlipper from "../NumberFlipper/numberFlipper";
 import Years25Icon from "../../assets/icons/25-years.png";
 import GuaranteeIcon from "../../assets/icons/protection-guarantee.png";
 import Support247Icon from "../../assets/icons/24-hours-support.png";
-import { useTranslation } from "react-i18next";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
+import { ApplicationModal } from "../ApplicationModal/ApplicationModal";
 
 const CardSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,7 +29,6 @@ const CardSection = () => {
     }
   }, [inView]); // Run only when 'inView' changes
 
-  const [t, i18next] = useTranslation("global");
 
   return (
     <div
@@ -82,14 +81,10 @@ const CardSection = () => {
               : "opacity-0 lg:-translate-x-10"
           }`}
         >
-          <Link
-            style={{ fontFamily: "Comfortaa" }}
-            to={"#apply-now"}
-            scrollbehavior="smooth"
-            className={`inline-block w-full mt-5 px-12 py-3 text-white rounded-xl bg-primaryYellow text-xl font-semibold transform transition-all border-[1px] border-transparent duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:border-primaryYellow hover:text-primaryYellow`}
-          >
-            <span className="inline-block">COMPANY DRIVER</span>
-          </Link>
+          <ApplicationModal
+            position="Company Driver"
+            id="companydriver_modal"
+          />
         </div>
         <div
           className={`duration-[2000ms] ${
@@ -98,14 +93,10 @@ const CardSection = () => {
               : "opacity-0 lg:-translate-x-10"
           }`}
         >
-          <Link
-            style={{ fontFamily: "Comfortaa" }}
-            to={"#apply-now"}
-            scrollbehavior="smooth"
-            className={`inline-block w-full mt-5 px-12 py-3 text-white rounded-xl bg-primaryYellow text-xl font-semibold transform transition-all border-[1px] border-transparent duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:border-primaryYellow hover:text-primaryYellow`}
-          >
-            <span className="inline-block">OWNER OPERATOR</span>
-          </Link>
+          <ApplicationModal
+            position="Owner Operator"
+            id="owneroperator_modal"
+          />
         </div>
       </div>
 
