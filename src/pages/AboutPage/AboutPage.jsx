@@ -55,7 +55,7 @@ const AboutPage = () => {
           </div>
           <div
             ref={ref}
-            className="flex flex-col items-center justify-center h-full max-w-full mx-auto px-4 -mt-12 lg:-mt-16"
+            className="flex flex-col items-center  h-full max-w-full mx-auto px-4 -mt-12 lg:-mt-16"
           >
             <div
               className={`duration-[1500ms] flex flex-col items-center justify-center ${
