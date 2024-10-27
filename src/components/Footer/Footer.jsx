@@ -1,5 +1,5 @@
 import React from "react";
-import FooterBanner from "../../assets/images/KamionatFooter.jpg";
+import FooterBanner from "../../assets/images/truck_image_second.jpeg";
 import Location from "../../assets/icons/location.png";
 import Phone from "../../assets/icons/phone.png";
 import Mail from "../../assets/icons/mail.png";
@@ -97,7 +97,7 @@ const Footer = () => {
             </p>
             <div className="flex lg:w-[85%] w-full items-center justify-center lg:justify-start ">
               <img src={Location} alt="" className="w-6 h-6" />
-              <p className="text-l text-center lg:text-start px-3 text-white font-thin underline underline-offset-2 transition-all duration-300  hover:underline-offset-4 hover:scale-[1.1] -mt-1">
+              <p className="text-l text-center lg:text-start px-3 text-white font-thin underline underline-offset-2 transition-all duration-300  hover:underline-offset-4 hover:scale-[1.1] ">
                 555 California Street, San Francisco, CA 94104
               </p>
             </div>
