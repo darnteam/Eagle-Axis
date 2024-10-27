@@ -2,7 +2,7 @@ import NavBar from "./components/NavBar/NavBar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutPage from "./pages/AboutPage/AboutPage";
-import ContactPage from "./pages/ContactPage/ContactPage";
+
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Footer from "./components/Footer/Footer";
 import EquipmentPage from "./pages/EquipmentPage/EquipmentPage";
@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
 
           <Route path="/equipment" element={<EquipmentPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+
         </Routes>
         <Footer />
       </Router>
