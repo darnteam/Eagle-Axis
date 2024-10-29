@@ -4,6 +4,7 @@ import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
 import CardSection from "../../components/cards-section/card-section";
 import IgShowcase from "../../components/ig-showcase/ig-showcase";
 import Memberships from "../../components/membership-plans/memberships";
+import FAQSection from "../../components/FAQ/FAQ-section";
 import { scrollToSection } from "../../utils/scrollUtils";
 import { useLocation } from 'react-router-dom';
 
@@ -35,6 +36,9 @@ const HomePage = () => {
       <Memberships />
       <IgShowcase />
       <div className="w-full h-4 bg-primaryYellow"></div>
+      <div>
+        <FAQSection />
+      </div>
     </div>
   );
 };
