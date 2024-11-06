@@ -29,7 +29,7 @@ const Footer = () => {
               style={{ fontFamily: "Comfortaa" }}
               className="text-3xl text-center lg:text-start text-white hover:text-primaryYellow"
             >
-              Eagle Axis
+              Eagle Axis 
             </h1>
 
             <div className="flex justify-between w-[80%] mx-auto lg:mx-0 lg:w-[30%] mt-20">
@@ -98,19 +98,19 @@ const Footer = () => {
             <div className="flex lg:w-[85%] w-full items-center justify-center lg:justify-start ">
               <img src={Location} alt="" className="w-6 h-6" />
               <p className="text-l text-center lg:text-start px-3 text-white font-thin underline underline-offset-2 transition-all duration-300  hover:underline-offset-4 hover:scale-[1.1] ">
-                555 California Street, San Francisco, CA 94104
+                4712 main st Lisle IL 60532
               </p>
             </div>
             <div className="flex lg:w-[85%] w-full items-center justify-center lg:justify-start">
               <img src={Phone} alt="" className="w-6 h-6" />
               <p className="text-l text-center lg:text-start px-3 text-white font-thin underline underline-offset-2 transition-all duration-300 hover:underline-offset-4 hover:scale-[1.1] -mt-1">
-                +123 45 7128378
+                (630)274-5622
               </p>
             </div>
             <div className="flex lg:w-[85%] w-full items-center justify-center lg:justify-start">
               <img src={Mail} alt="" className="w-6 h-6" />
               <p className="text-l text-center lg:text-start px-3 text-white font-thin underline underline-offset-2 transition-all duration-300  hover:underline-offset-4 hover:scale-[1.1] -mt-1">
-                info@eagleaxis.com
+                dispatch@eagleaxis.com
               </p>
             </div>
           </div>
