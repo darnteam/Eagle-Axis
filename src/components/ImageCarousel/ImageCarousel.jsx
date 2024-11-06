@@ -46,7 +46,7 @@ const ImageCarousel = ({ scrollToCardSection }) => {
                   isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
                 }`}
               >
-                WELCOME TO EAGLE AXIS
+                Eagle Axis  
               </h1>
 
               <h1
@@ -55,7 +55,7 @@ const ImageCarousel = ({ scrollToCardSection }) => {
                   isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
                 }`}
               >
-                TRUSTED NAME IN TRUCKING
+                Where Your Journey Begins
               </h1>
 
               <p
@@ -64,9 +64,7 @@ const ImageCarousel = ({ scrollToCardSection }) => {
                   isVisible ? "translate-x-0 opacity-100" : "lg:-translate-x-10 opacity-0"
                 }`}
               >
-                Eagle Axis is a growing trucking company with a fleet of company-owned trucks
-                and owner-operated trucks, serving all 48 states with a focus on the Midwest,
-                South, and East Coast.
+                Looking to start or revamp your driving career? Eagle Axis offers the support, training, and opportunities to put you on the path to success. Join us and let’s begin the journey together!
               </p>
 
               <div
@@ -78,7 +76,7 @@ const ImageCarousel = ({ scrollToCardSection }) => {
                   style={{ fontFamily: "Comfortaa" }}
                   className="mt-4 sm:mt-6 md:mt-8 text-lg sm:text-xl md:text-2xl"
                 >
-                  Are you a truck driver looking for work?
+                  
                 </p>
                 <button
                   onClick={scrollToCardSection} // Use the scroll function here

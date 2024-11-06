@@ -71,17 +71,8 @@ const AboutPage = () => {
                 style={{ fontFamily: "Comfortaa" }}
                 className="mt-12 md:mt-20 lg:mt-24 w-full md:w-3/4 lg:w-1/2 text-center text-sm md:text-lg lg:text-xl text-white mx-auto"
               >
-                Eagle Axis is a growing trucking company, with a 50-strong fleet
-                of company-owned trucks and owner-operated trucks, serving all
-                48 states with a focus on the Midwest, South, and East Coast.
-                Our name reflects our mission: to guard and protect our valued
-                drivers, the heart and soul of our brand. We know that our
-                success relies on recruiting and retaining the best drivers on
-                the road. We give them what they need to succeed, including
-                well-managed dispatching, expert safety training, round-the-clock
-                support, and — most importantly — fair and transparent
-                compensation. Join our team and become part of a movement to
-                transform the trucking industry.
+                Eagle Axis is a dedicated and growing trucking company with a fleet of company-owned and owner-operated trucks, proudly covering all 48 states, with a focus on the Midwest, South, and East Coast. Our mission centers on protecting and supporting our drivers, who are the backbone of our success. We’re committed to providing top-tier resources, including expert dispatch, thorough safety training, 24/7 support, and a transparent pay structure. At Eagle Axis, we believe that by investing in our drivers, we’re driving the future of the trucking industry. 
+                Join our team and experience the difference.
               </p>
               <button
                 onClick={handleApplyClick}
