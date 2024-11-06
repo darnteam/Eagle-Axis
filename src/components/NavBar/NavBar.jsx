@@ -36,7 +36,7 @@ const NavBar = () => {
         to="/"
       >
         <img
-          className="object-cover scale-75 h-20 w-32 m-0 p-0"
+          className="object-cover scale-75 h-24 w-36 m-0 p-0"
           src={Logo}
           alt="Eagle Axis Logo"
         />
@@ -77,10 +77,10 @@ const NavBar = () => {
 
       <div className="lg:mr-4 flex items-center">
         <a
-          href="tel:(630)274-5622"
+          href="tel:+1 (630)274-5622"
           className="inline-block px-4 py-2 md:px-5 md:py-2 lg:px-6 lg:py-2 text-white rounded-lg bg-primaryYellow text-sm md:text-base lg:text-lg font-semibold transform transition-all duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:text-primaryYellow border border-transparent hover:border-primaryYellow"
         >
-          (630)274-5622
+          +1 (630)274-5622
         </a>
       </div>
 
@@ -142,10 +142,10 @@ const NavBar = () => {
             )
           ))}
           <a
-            href="tel:(630)274-5622"
+            href="tel:+1 (630)274-5622"
             className="mt-6 px-4 py-2 md:px-5 md:py-2 lg:px-6 lg:py-2 text-white rounded-lg bg-primaryYellow text-lg font-semibold transform transition-all duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:text-primaryYellow border border-transparent hover:border-primaryYellow"
           >
-            (630)274-5622
+            +1 (630)274-5622
           </a>
         </div>
       </div>
