@@ -85,7 +85,6 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <IgShowcase />
       <div className="w-full h-4 bg-primaryYellow"></div>
     </div>
   );

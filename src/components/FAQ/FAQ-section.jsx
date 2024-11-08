@@ -3,10 +3,12 @@ import FAQItem from "./FAQ-question.jsx";
 
 const FAQSection = () => {
     return (
-        <>
-            <div className="bg-white text-center pb-4">
-                <h4 className="text-xl text-primaryYellow pt-6">Frequently Asked Questions</h4>
-                <h1 className="text-richBlack text-6xl m-2">Have Any Questions?</h1>
+        <div className="container mx-auto">
+            <div className="text-center pb-4 ">
+                <h4 style={{ fontFamily: "Comfortaa" }} 
+                className="text-xl text-primaryYellow pt-6">Frequently Asked Questions</h4>
+                <h1 style={{ fontFamily: "Comfortaa" }}
+                className="text-white text-6xl m-2">Have Any Questions?</h1>
                 <div className="w-[5%] h-1 bg-primaryYellow mx-auto my-4"></div>
                 <div className="my-8">
                     <FAQItem 
@@ -43,7 +45,7 @@ const FAQSection = () => {
                     />
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

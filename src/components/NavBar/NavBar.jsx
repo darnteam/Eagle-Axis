@@ -7,9 +7,9 @@ import CloseMenu from "../../assets/images/closeMobileMenu.png";
 const NavBar = () => {
   const navigate = useNavigate();
   const paths = [
-    { pathway: "ABOUT US", link: "/about" },
+    { pathway: "ABOUT US", link: "/", state: { scrollToAbout: true } },
     { pathway: "APPLY NOW", link: "/", state: { scrollToCards: true } },
-    { pathway: "EQUIPMENT", link: "/equipment" },
+    { pathway: "EQUIPMENT", link: "/", state: { scrollToEquipment: true } },
   ];
 
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -25,6 +25,13 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <nav
       className={`mx-auto flex justify-between items-center border-solid h-20 w-full fixed top-0 left-0 z-50 transition-colors duration-300 ${
@@ -34,6 +41,7 @@ const NavBar = () => {
       <NavLink
         className="hidden lg:flex flex-row h-20 w-1/8 p-0 mx-2 justify-center items-center hover:cursor-pointer"
         to="/"
+        onClick={scrollToTop}
       >
         <img
           className="object-cover scale-75 h-24 w-36 m-0 p-0"
@@ -110,7 +118,10 @@ const NavBar = () => {
           <NavLink
             className="flex flex-row h-20  p-2 justify-center items-center cursor-pointer mb-6"
             to="/"
-            onClick={() => setMobileMenu(false)}
+            onClick={() => {
+              setMobileMenu(false);
+              scrollToTop();
+            }}
           >
             <img
               className="object-cover w-32 m-0 p-0 mb-8"

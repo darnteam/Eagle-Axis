@@ -13,17 +13,19 @@ const FAQItem = ({ question, answer }) => {
         className="flex justify-between items-center cursor-pointer" 
         onClick={toggleOpen}
       >
-        <span className={`font-semibold text-lg ${isOpen ? 'text-primaryYellow' : 'text-black'}`}>
+        <span style={{ fontFamily: "Comfortaa" }} 
+        className={`font-semibold text-lg ${isOpen ? 'text-primaryYellow' : 'text-white'}`}>
           {question}
         </span>
-        <span className={`font-bold text-2xl ${isOpen ? 'text-primaryYellow' : 'text-black'}`}>
+        <span style={{ fontFamily: "Comfortaa" }} 
+        className={`font-bold text-2xl ${isOpen ? 'text-primaryYellow' : 'text-black'}`}>
           {isOpen ? '-' : '+'}
         </span>
       </div>
       <div 
         className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 mt-2' : 'max-h-0'}`}
       >
-        <p className="text-gray-700 text-left  ">{answer}</p>
+        <p className="text-white text-left  ">{answer}</p>
       </div>
     </div>
   );
