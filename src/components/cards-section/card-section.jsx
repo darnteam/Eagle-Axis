@@ -16,6 +16,19 @@ const CardSection = () => {
     setIsVisible(inView);
   }, [inView]);
 
+  useEffect(() => {
+    // Check URL parameters on component mount
+    const urlParams = new URLSearchParams(window.location.search);
+    const modalToOpen = urlParams.get('modal');
+    
+    if (modalToOpen) {
+      const modalElement = document.getElementById(modalToOpen);
+      if (modalElement) {
+        modalElement.showModal();
+      }
+    }
+  }, []);
+
   return (
     <div
       id="apply-now" 

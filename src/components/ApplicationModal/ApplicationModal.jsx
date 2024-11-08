@@ -1,6 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export const ApplicationModal = ({ position, id }) => {
+  useEffect(() => {
+    // Check URL parameters on component mount
+    const urlParams = new URLSearchParams(window.location.search);
+    const modalToOpen = urlParams.get('modal');
+    
+    if (modalToOpen === id) {
+      document.getElementById(id).showModal();
+    }
+  }, [id]);
+
   // State to hold form input values
   const [formData, setFormData] = useState({
     firstName: "",
