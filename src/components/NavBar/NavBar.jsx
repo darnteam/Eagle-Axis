@@ -34,23 +34,29 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`mx-auto flex justify-between items-center border-solid h-20 w-full fixed top-0 left-0 z-50 transition-colors duration-300 ${
-        scrolled ? "bg-black bg-opacity-100" : "bg-transparent"
+      className={`mx-auto flex justify-between items-center border-solid h-24 w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
+        scrolled 
+          ? "bg-black bg-opacity-100 h-20" 
+          : "bg-gradient-to-b from-black to-transparent h-28"
       }`}
     >
       <NavLink
-        className="hidden lg:flex flex-row h-20 w-1/8 p-0 mx-2 justify-center items-center hover:cursor-pointer"
+        className="flex flex-row h-full p-2 justify-center items-center hover:cursor-pointer transition-all duration-300 lg:mx-4 mx-2"
         to="/"
         onClick={scrollToTop}
       >
         <img
-          className="object-cover scale-75 h-24 w-36 m-0 p-0"
+          className={`object-contain transition-all lg:ml-0 -ml-8 duration-300 ${
+            scrolled 
+              ? "lg:h-14 lg:w-44 h-12 w-36" 
+              : "lg:h-24 lg:w-64 h-16 w-48"
+          }`}
           src={Logo}
           alt="Eagle Axis Logo"
         />
       </NavLink>
 
-      <ul className="hidden lg:flex flex-row justify-center items-center h-full space-x-6">
+      <ul className="hidden lg:flex flex-row justify-center items-center h-full space-x-8 flex-grow">
         {paths.map((e) => (
           <li
             style={{ fontFamily: "Comfortaa" }}
@@ -83,7 +89,7 @@ const NavBar = () => {
         ))}
       </ul>
 
-      <div className="lg:mr-4 flex items-center">
+      <div className="hidden lg:flex lg:mr-8 items-center">
         <a
           href="tel:+1 (630)274-5622"
           className="inline-block px-4 py-2 md:px-5 md:py-2 lg:px-6 lg:py-2 text-white rounded-lg bg-primaryYellow text-sm md:text-base lg:text-lg font-semibold transform transition-all duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:text-primaryYellow border border-transparent hover:border-primaryYellow"
@@ -92,8 +98,7 @@ const NavBar = () => {
         </a>
       </div>
 
-      {/* Mobile Menu Toggle Button */}
-      <div className="lg:hidden z-40 p-4">
+      <div className="lg:hidden z-40 p-4 mr-2">
         <img
           src={Burger}
           alt="burger menu"
@@ -102,7 +107,6 @@ const NavBar = () => {
         />
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`fixed top-0 inset-0 bg-black z-40 flex flex-col items-center justify-center transform transition-transform duration-500 ease-in-out h-screen w-screen ${
           mobileMenu ? "translate-y-0" : "-translate-y-full"
@@ -110,25 +114,11 @@ const NavBar = () => {
       >
         <img
           src={CloseMenu}
-          className="absolute top-5 right-5 w-6 h-6 cursor-pointer z-50"
+          className="absolute top-6 right-6 w-7 h-7 cursor-pointer z-50"
           alt="Close menu"
           onClick={() => setMobileMenu(false)}
         />
-        <div className="flex flex-col items-center">
-          <NavLink
-            className="flex flex-row h-20  p-2 justify-center items-center cursor-pointer mb-6"
-            to="/"
-            onClick={() => {
-              setMobileMenu(false);
-              scrollToTop();
-            }}
-          >
-            <img
-              className="object-cover w-32 m-0 p-0 mb-8"
-              src={Logo}
-              alt="Eagle Axis Logo"
-            />
-          </NavLink>
+        <div className="flex flex-col items-center space-y-6">
           {paths.map((e) => (
             e.state ? (
               <button
@@ -137,7 +127,7 @@ const NavBar = () => {
                   navigate(e.link, { state: e.state });
                   setMobileMenu(false);
                 }}
-                className="text-white text-2xl py-2 hover:text-primaryYellow"
+                className="text-white text-2xl py-2 hover:text-primaryYellow transition-all duration-300"
               >
                 {e.pathway}
               </button>
@@ -145,7 +135,7 @@ const NavBar = () => {
               <NavLink
                 key={e.pathway}
                 to={e.link}
-                className="text-white text-2xl py-2 hover:text-primaryYellow"
+                className="text-white text-2xl py-2 hover:text-primaryYellow transition-all duration-300"
                 onClick={() => setMobileMenu(false)}
               >
                 {e.pathway}
@@ -154,7 +144,7 @@ const NavBar = () => {
           ))}
           <a
             href="tel:+1 (630)274-5622"
-            className="mt-6 px-4 py-2 md:px-5 md:py-2 lg:px-6 lg:py-2 text-white rounded-lg bg-primaryYellow text-lg font-semibold transform transition-all duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:text-primaryYellow border border-transparent hover:border-primaryYellow"
+            className="mt-6 px-6 py-3 text-white rounded-lg bg-primaryYellow text-xl font-semibold transform transition-all duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:text-primaryYellow border border-transparent hover:border-primaryYellow"
           >
             +1 (630)274-5622
           </a>

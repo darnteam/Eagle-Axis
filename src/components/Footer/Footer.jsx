@@ -25,10 +25,20 @@ const Footer = () => {
           <div className="mt-24 mb-12  lg:w-[40%]">
             <h1
               style={{ fontFamily: "Comfortaa" }}
-              className="text-3xl text-center lg:text-start text-white hover:text-primaryYellow"
+              className="text-3xl text-center lg:text-start text-white hover:text-primaryYellow mb-8"
             >
               Eagle Axis
             </h1>
+
+            <div> 
+            <p
+                style={{ fontFamily: "Comfortaa" }}
+                className="text-l text-center lg:text-start text-white font-semibold mb-0"
+            >
+                Dedicated trucking company covering all 48 states, focused on Midwest, South, and East Coast routes. We prioritize driver support with expert dispatch, 24/7 assistance, safety training, and transparent pay. Join us and drive the future of trucking!
+            </p>
+            </div>
+            
 
             <div className="flex justify-between w-[80%] mx-auto lg:mx-0 lg:w-[30%] mt-20">
               <a href="https://www.instagram.com/eagleaxis_trucking?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">

@@ -33,8 +33,8 @@ export const ApplicationModal = ({ position, id }) => {
       >
         {position}
       </button>
-      <dialog id={id} className="modal">
-        <div className="modal-box">
+      <dialog id={id} className="modal" >
+        <div className="modal-box bg-black" style={{ backgroundColor: "oklch(var(--b1, 0.6) / var(--tw-bg-opacity, 1))" }}>
           <form method="dialog" onSubmit={handleSubmit}>
             <button
               className="btn btn-sm btn-circle btn-ghost absolute right-2 text-primaryYellow text-lg top-2"

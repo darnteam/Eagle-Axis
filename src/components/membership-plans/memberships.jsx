@@ -43,7 +43,6 @@ const Memberships = () => {
               Transparency is a key aspect of our company. See how much you can
               earn by reviewing the paychecks received by our drivers this month.
             </p>
-            <div className="w-[2px] h-12 md:h-20 bg-white"></div>
           </div>
 
           <div className="flex justify-center space-x-4 md:space-x-8 my-8">
