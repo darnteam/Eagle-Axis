@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import emailjs from "@emailjs/browser"
 
 export const ApplicationModal = ({ position, id }) => {
   useEffect(() => {
@@ -30,9 +31,37 @@ export const ApplicationModal = ({ position, id }) => {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here, you can handle the form data (e.g., send to an API)
-    console.log("Form Submitted:", formData);
-    document.getElementById(id).close(); // Close modal after submit
+
+    // Configure EmailJS parameters
+    const templateParams = {
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      zip: formData.zip,
+      cellphone: formData.cellphone,
+      option: formData.option,
+      toEmail: process.env.REACT_APP_EMAIL_RECIPIANT
+    };
+
+    // Send the email using EmailJS
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,  
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
+        templateParams,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY 
+      )
+      .then(
+        (response) => {
+          console.log('Email sent successfully!', response.status, response.text);
+          alert('Email sent successfully!');
+          document.getElementById(id).close(); // Close modal after submit
+        },
+        (error) => {
+          console.error('Failed to send email:', error);
+          alert('Failed to send email.');
+        }
+      );
   };
 
   return (
@@ -124,10 +153,10 @@ export const ApplicationModal = ({ position, id }) => {
                 <option value="" disabled>
                   What is your CDL-A Experience?
                 </option>
-                <option value="option1">No CDL-A</option>
-                <option value="option2">0-6 months</option>
-                <option value="option3">6-12 months</option>
-                <option value="option4">1+ years</option>
+                <option value="No CDL-A">No CDL-A</option>
+                <option value="0-6 months">0-6 months</option>
+                <option value="6-12 months">6-12 months</option>
+                <option value="1+ years">1+ years</option>
               </select>
             </div>
 
