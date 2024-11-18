@@ -88,10 +88,10 @@ const Footer = () => {
             <div className="flex lg:w-[85%] w-full items-center justify-center lg:justify-start">
               <img src={Phone} alt="" className="w-6 h-6" />
               <a
-                href="tel: +1 (630)274-5622"
+                href="tel: +1 (630)-242-6020"
                 className="text-l text-center lg:text-start px-3 text-white font-thin underline underline-offset-2 transition-all duration-300 hover:underline-offset-4 hover:scale-[1.1] -mt-1"
               >
-                +1 (630)274-5622
+                +1 (630)-242-6020
               </a>
             </div>
             <div className="flex lg:w-[85%] w-full items-center justify-center lg:justify-start">

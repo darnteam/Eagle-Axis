@@ -91,10 +91,10 @@ const NavBar = () => {
 
       <div className="hidden lg:flex lg:mr-8 items-center">
         <a
-          href="tel:+1 (630)274-5622"
+          href="tel:+1 (630)-242-6020"
           className="inline-block px-4 py-2 md:px-5 md:py-2 lg:px-6 lg:py-2 text-white rounded-lg bg-primaryYellow text-sm md:text-base lg:text-lg font-semibold transform transition-all duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:text-primaryYellow border border-transparent hover:border-primaryYellow"
         >
-          +1 (630)274-5622
+          +1 (630)-242-6020
         </a>
       </div>
 
@@ -143,10 +143,10 @@ const NavBar = () => {
             )
           ))}
           <a
-            href="tel:+1 (630)274-5622"
+            href="tel:+1 (630)-242-6020"
             className="mt-6 px-6 py-3 text-white rounded-lg bg-primaryYellow text-xl font-semibold transform transition-all duration-300 ease-in-out hover:scale-105 hover:bg-transparent hover:text-primaryYellow border border-transparent hover:border-primaryYellow"
           >
-            +1 (630)274-5622
+            +1 (630)-242-6020
           </a>
         </div>
       </div>
