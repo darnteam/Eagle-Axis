@@ -99,7 +99,7 @@ export const ApplicationModal = ({ position, id }) => {
                 value={formData.firstName}
                 onChange={handleChange}
                 required
-                className="input input-bordered w-full"
+                className="input bg-slate-900	 input-bordered w-full"
               />
 
               <label className="block mt-4 mb-2">Last Name</label>
@@ -109,7 +109,7 @@ export const ApplicationModal = ({ position, id }) => {
                 value={formData.lastName}
                 onChange={handleChange}
                 required
-                className="input input-bordered w-full"
+                className="input bg-slate-900	input-bordered w-full"
               />
 
               <label className="block mt-4 mb-2">Email</label>
@@ -119,7 +119,7 @@ export const ApplicationModal = ({ position, id }) => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="input input-bordered w-full"
+                className="input bg-slate-900 input-bordered w-full"
               />
 
               <label className="block mt-4 mb-2">Zip Code</label>
@@ -129,7 +129,7 @@ export const ApplicationModal = ({ position, id }) => {
                 value={formData.zip}
                 onChange={handleChange}
                 required
-                className="input input-bordered w-full"
+                className="input bg-slate-900 input-bordered w-full"
               />
 
               <label className="block mt-4 mb-2">Cellphone Number</label>
@@ -139,24 +139,22 @@ export const ApplicationModal = ({ position, id }) => {
                 value={formData.cellphone}
                 onChange={handleChange}
                 required
-                className="input input-bordered w-full"
+                className="input bg-slate-900 input-bordered w-full"
               />
 
-              <label className="block mt-4 mb-2">Select Position</label>
+              <label className="block  mt-4 mb-2">Select Position</label>
               <select
                 name="option"
                 value={formData.option}
                 onChange={handleChange}
                 required
-                className="select select-bordered w-full"
+                className="select select-bordered bg-slate-900 w-full"
               >
                 <option value="" disabled>
                   What is your CDL-A Experience?
                 </option>
-                <option value="No CDL-A">No CDL-A</option>
-                <option value="0-6 months">0-6 months</option>
-                <option value="6-12 months">6-12 months</option>
-                <option value="1+ years">1+ years</option>
+                <option value="Less than 2 years">Less than 2 years</option>
+                <option value="2+ years">2+ years</option>
               </select>
             </div>
 

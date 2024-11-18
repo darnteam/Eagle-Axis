@@ -39,7 +39,7 @@ const ImageCarousel = ({ scrollToCardSection }) => {
             alt="Background"
           />
           <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50">
-            <div className="px-4 sm:px-6 md:px-12 lg:px-16 mt-20 text-white text-center lg:text-left">
+            <div className="px-4 sm:px-6 md:px-12 lg:px-16 md:mt-20 text-white text-center lg:text-left">
               <h1
                 style={{ fontFamily: "Comfortaa" }}
                 className={`w-full md:w-2/3 lg:w-2/3 uppercase font-black text-opacity-90 text-2xl sm:text-3xl md:text-4xl lg:text-5xl transition-all duration-1000 ${
