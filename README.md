@@ -1,7 +1,6 @@
 # EagleAxis
 
-Codebase for Eagle Axis Web 
-
+Codebase for Eagle Axis Web
 
 Direct links for application modals:
 
