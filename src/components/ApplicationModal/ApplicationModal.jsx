@@ -40,7 +40,8 @@ export const ApplicationModal = ({ position, id }) => {
       zip: formData.zip,
       cellphone: formData.cellphone,
       option: formData.option,
-      toEmail: process.env.REACT_APP_EMAIL_RECIPIANT
+      toEmail: process.env.REACT_APP_EMAIL_RECIPIANT,
+      position: position
     };
 
     // Send the email using EmailJS
@@ -53,13 +54,13 @@ export const ApplicationModal = ({ position, id }) => {
       )
       .then(
         (response) => {
-          console.log('Email sent successfully!', response.status, response.text);
-          alert('Email sent successfully!');
+          console.log('Application sent successfully!', response.status, response.text);
+          alert('Application sent successfully!');
           document.getElementById(id).close(); // Close modal after submit
         },
         (error) => {
           console.error('Failed to send email:', error);
-          alert('Failed to send email.');
+          alert('Failed to send application.');
         }
       );
   };
