@@ -89,17 +89,17 @@ const Memberships = () => {
               <>
                 <SimplePricingCard
                   name="Dean Grahams"
-                  miles="11357"
+                  miles="11,357"
                   ratePerMile="0.65"
                   emBonus="700"
                   total="8,082.05"
                 />
                 <SimplePricingCard
                   name="Peter Matthews"
-                  miles="7066.15"
+                  miles="12,782"
                   ratePerMile="0.65"
                   referalBonus="500"
-                  total="7566.15"
+                  total="8808.3"
                 />
               </>
             )}
